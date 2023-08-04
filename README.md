@@ -6,6 +6,27 @@
 ### jsp 동작원리<br>
 ![image](https://github.com/yeonjuyeong/jsp/assets/123055714/01ef9238-6946-450a-adf2-1726658a1a3c)
 
+### 스위치 캐이스문
+``` jsp
+<%
+	int year = 1;
+	String msg = null;
+	
+	switch (year){
+	case 1: msg="fresh man"; break;
+	case 2: msg="sophomore"; break;
+	case 3: msg="junior"; break;
+	case 4: msg="senior"; break;
+	default: msg="학년오류";
+	break;
+	}
+%>
+```
+
+화면출력
+``` jsp
+<b> <%=year %> 학년은 <%= msg %>입니다.</b>
+```
 ### jsp 2차원 배열
 배열 생성
 ```jsp
